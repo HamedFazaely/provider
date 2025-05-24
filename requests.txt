@@ -1,0 +1,17 @@
+curl --location 'http://localhost:9090/v1/status/update/hamed/10' \
+--header 'Content-Type: application/json' \
+--data '{
+    "status":"3"
+}'
+
+
+
+-----------------------------------------------------------
+
+
+
+curl --location --request GET 'http://localhost:9090/v1/status/hamed/10' \
+--header 'Content-Type: application/json' \
+--data '{
+    "status":"3"
+}'
